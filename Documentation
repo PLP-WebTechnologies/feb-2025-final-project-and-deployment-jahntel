@@ -1,0 +1,90 @@
+E-Commerce Website Documentation
+
+1) Project Overview
+This project is a multi-page eCommerce website built using HTML, CSS, and JavaScript. It provides users with a structured browsing experience, product listings, a shopping cart, and a contact form. The project is designed to be scalable, allowing future backend integration, payment processing, and user authentication.
+
+Folder Structure
+
+/ecommerce-site
+│── index.html         (Home Page)
+│── products.html      (Products Page)
+│── cart.html          (Cart Page)
+│── contact.html       (Contact Page)
+│── styles.css         (CSS file for styling)
+│── script.js          (JavaScript file for functionality)
+└── images/            (Store product images)
+
+2) Features
+
+a) Multi-page navigation
+All pages include a navigation bar for easy access.
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+b) Homepage (index.html)
+- Displays a welcome message.
+- Provides a "Shop Now" button linking to the Products page.
+
+c) Products Page (products.html)
+- Lists multiple products with images, prices, and an "Add to Cart" button.
+- Calls the addToCart() function.
+
+d)  Shopping Cart (cart.html)
+- Shows selected products.
+- Updates dynamically via JavaScript.
+- Includes a Checkout button.
+
+e) Contact Page (contact.html)
+- Basic contact form for user inquiries.
+
+3. Functionality
+ Add to Cart & Checkout
+Implemented using JavaScript (script.js):
+
+let cart = [];
+
+function addToCart(product, price) {
+    cart.push({ product, price });
+    updateCart();
+}
+
+function updateCart() {
+    let cartItems = document.getElementById("cart-items");
+    cartItems.innerHTML = "";
+    cart.forEach(item => {
+        let listItem = document.createElement("li");
+        listItem.textContent = `${item.product} - $${item.price}`;
+        cartItems.appendChild(listItem);
+    });
+}
+
+function checkout() {
+    alert("Proceeding to checkout!");
+}
+
+- Cart updates dynamically when items are added.
+- A user can proceed to checkout.
+
+4. Styling (styles.css)
+Basic CSS for layout and design:
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.product {
+    display: inline-block;
+    margin: 20px;
+}

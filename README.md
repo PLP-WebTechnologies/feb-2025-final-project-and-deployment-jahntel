@@ -1,25 +1,28 @@
-# Final Project and Deployment
+# E-Commerce Website 🛍️
 
-## Objectives
-Build a fully functional web application.
-Apply HTML, CSS, and JavaScript concepts learned.
-Deploy the project using GitHub Pages, Netlify, or Vercel.
+## **Project Overview**
+This is a **multi-page eCommerce website** built using **HTML, CSS, and JavaScript**. The site includes product listings, a shopping cart, and a contact page, allowing users to browse and purchase items efficiently.
 
-## Instructions
-Choose one of the following project ideas:
-Blog Website: Implement a multi-page site with navigation.
-Ecommerce Website: Implement a multi-page site with navigation.
+## **Features**
+✔ **Multi-page navigation** (Home, Products, Cart, Contact)  
+✔ **Dynamic shopping cart** (Items added are displayed in the cart)  
+✔ **Interactive product listings** (Add-to-cart functionality)  
+✔ **Responsive design** (Optimized for different screen sizes)  
+✔ **Simple checkout process**  
 
->[!NOTE]
-> - Include at least:
-> - A responsive design.
-> - JavaScript interactivity.
-> - A deployment link.
+## **Project Structure**
 
-## Tasks
+## **Installation & Setup**
+1️⃣ **Clone the repository:**  
+```bash
+git clone https://github.com/jahntel/ecommerce-site.git
+cd ecommerce-site
 
-Create a well-structured HTML5 document.
-Use at least 5 different HTML elements.
-Ensure semantic correctness.
+Open index.html in a browser to start using the site locally.
+Usage
+- Navigate using the menu bar at the top.
+- Add products to your cart and view selected items.
+- Click "Checkout" to process an order.
+- Use the Contact Page for customer inquiries.
 
-Good luck and happy coding! 🚀💻
+ 
