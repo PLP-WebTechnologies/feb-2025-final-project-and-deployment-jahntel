@@ -5,6 +5,11 @@ body {
     text-align: center;
 }
 
+body {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+}
+
 nav ul {
     list-style: none;
     padding: 10px;
